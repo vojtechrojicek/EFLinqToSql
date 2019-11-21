@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "EFLinqToSql";
+}
+@section scripts{
+    <script>
+        function Loading() {
+            $("#submit").hide();
+            $("#loading").show();
+        }
+    </script>
+}
+
+<div>
+    <form method="post">
+        <div class="row">
+            <div class="col">
+                <label for="context">DbContext</label>
+                <textarea class="form-control" name="context" rows="8" readonly>@Model.DbContextText</textarea>
+            </div>
+            <div class="col">
+                <label for="entities">Entities</label>
+                <textarea class="form-control" name="entities" rows="8" readonly>@Model.EntitiesText</textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="linq">Linq</label>
+                <textarea class="form-control" name="linq" id="linq" placeholder='Products.Where(x => x.Description == "test")' rows="5" required>Products.Where(x => x.Description == "test")</textarea>
+            </div>
+        </div>
+        <div class="text-center" style="margin: 10px;">
+            <button id="loading" type="submit" class="btn btn-success" style="display: none" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
+            <button id="submit" type="submit" class="btn btn-success" onclick="Loading()">Submit</button>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="response">Response</label>
+                <textarea class="form-control" name="response" rows="15" readonly>@Model.ResponseText</textarea>
+            </div>
+        </div>
+    </form>
+</div>

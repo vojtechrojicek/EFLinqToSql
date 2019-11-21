@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB571BCF-75C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{4439E68F-C0F5-438B-A87B-741781B408AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLinqToSql.Razor", "Samples\EFLinqToSql.Razor\EFLinqToSql.Razor.csproj", "{713A73F5-818C-4170-96E6-DBCB199FFC6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{FA73F044-A75C-4699-96F7-4C1061241F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA73F044-A75C-4699-96F7-4C1061241F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA73F044-A75C-4699-96F7-4C1061241F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713A73F5-818C-4170-96E6-DBCB199FFC6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713A73F5-818C-4170-96E6-DBCB199FFC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713A73F5-818C-4170-96E6-DBCB199FFC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713A73F5-818C-4170-96E6-DBCB199FFC6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2E4E3E43-17FD-4832-AAE1-25E4D44AF11F} = {CB571BCF-75C6-4C61-A484-B217E513E247}
 		{FA73F044-A75C-4699-96F7-4C1061241F75} = {4439E68F-C0F5-438B-A87B-741781B408AD}
+		{713A73F5-818C-4170-96E6-DBCB199FFC6E} = {4439E68F-C0F5-438B-A87B-741781B408AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04529AAC-6DC9-458E-84E5-7B14BFAF3D02}
