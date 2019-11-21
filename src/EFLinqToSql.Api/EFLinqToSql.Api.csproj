@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\EFLinqToSql\EFLinqToSql.csproj" />
+    <ProjectReference Include="..\EFLinqToSql\EFLinqToSql.csproj" />
   </ItemGroup>
 
 </Project>
